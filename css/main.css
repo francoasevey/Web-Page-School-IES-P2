@@ -34,6 +34,22 @@ section {
   padding: 5rem 10%;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid #0eb582;
+  background: #f0fdfa;
+  color: #0eb582;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: #0eb582;
+  color: #fff;
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -92,6 +108,7 @@ section {
 .header #menu-btn {
   display: none;
 }
+/*====================================================================================*/
 
 .footer {
   background: #f0fdfa;
