@@ -39,6 +39,13 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 5rem 10%;
 }
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
 
 .btn {
   display: inline-block;
@@ -102,9 +109,6 @@ section {
 .header .icons div:hover {
   color: #001eff;
 }
-.header #menu-btn {
-  display: none;
-}
 /*====================================================================================*/
 
 .home {
@@ -121,9 +125,12 @@ section {
   width: 50rem;
 }
 .home .slide .content h3 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: capitalize;
   color: #000000;
+}
+.home .slide .content h3 strong{
+  font-size: 6rem;
 }
 .home .slide .content p {
   font-size: 2.6rem;
@@ -132,7 +139,70 @@ section {
   padding: 1rem 0;
 }
 
+/*===================================PRODUCTS=================================================*/
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+.products .box-container .box {
+  padding: 1rem 1rem;
+  text-align: center;
+  border: 0.1rem solid #0062ff;
+  background: rgb(229, 231, 233);
+  cursor: pointer;
+  border-radius: 10%;
+}
+.products .box-container .box:hover {
+  background: #026cff;
+}
+.products .box-container .box:hover h3 {
+  color: #fff;
+}
+.products .box-container .box:hover p {
+  color: #eee;
+}
+.products .box-container .box img {
+  height: 16rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10%;
+}
+.products .box-container .box h3 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: 0.5rem 0;
+}
+.products .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+.products .box-container .box button{
+  font-size: 1.9rem;
+  font-weight: 900;
+  border-radius: 10%;
+  border: 0.3rem solid #3a3b3b;
+  background: #f0f6fd;
+  color: #0022ff;
+  cursor: pointer;
+}
+.products .box-container .box button:hover{
+  background: #ff0202;
+  color: #fff;
+}
 /*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+/*====================================================================================*/
+
 
 .footer {
   background: #f0fdfa;
@@ -202,4 +272,9 @@ section {
 }
 .footer .credit span {
   color: #0048ff;
+}
+.footer .credit span img{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
 }
