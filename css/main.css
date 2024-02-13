@@ -29,6 +29,7 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #0eb582;
 }
+/*====================================================================================*/
 
 section {
   padding: 5rem 10%;
@@ -49,6 +50,7 @@ section {
   background: #0eb582;
   color: #fff;
 }
+/*====================================================================================*/
 
 .header {
   position: sticky;
@@ -107,6 +109,38 @@ section {
 }
 .header #menu-btn {
   display: none;
+}
+/*====================================================================================*/
+
+.home {
+  padding: 0;
+}
+.home .slide {
+  display: flex;
+  align-items: center;
+  height: 60rem;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.home .slide .content {
+  width: 50rem;
+}
+.home .slide .content h3 {
+  font-size: 5rem;
+  text-transform: capitalize;
+  color: #444;
+  color: #fff;
+}
+.home .slide .content p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #777;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0eb582;
 }
 /*====================================================================================*/
 
