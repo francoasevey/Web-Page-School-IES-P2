@@ -15,6 +15,11 @@ img {
      -moz-user-select: none;
           user-select: none;
 }
+.background{
+  background-image: url("/assets/supermarket.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 html {
   font-size: 62.5%;
@@ -27,7 +32,7 @@ html::-webkit-scrollbar-track {
   background: transparent;
 }
 html::-webkit-scrollbar-thumb {
-  background: #0eb582;
+  background: #0045c4;
 }
 /*====================================================================================*/
 
@@ -39,15 +44,16 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  font-size: 1.8rem;
-  border: 0.1rem solid #0eb582;
-  background: #f0fdfa;
-  color: #0eb582;
+  font-size: 2.5rem;
+  border-radius: 10%;
+  border: 0.1rem solid #3a3b3b;
+  background: #f0f6fd;
+  color: #ff0000;
   cursor: pointer;
   text-transform: capitalize;
 }
 .btn:hover {
-  background: #0eb582;
+  background: #ff0202;
   color: #fff;
 }
 /*====================================================================================*/
@@ -72,23 +78,12 @@ section {
   font-weight: bolder;
 }
 .header .logo i {
-  color: #0eb582;
+  color: #0022ff;
 }
 .header .navbar {
   position: relative;
 }
-.header .navbar #close-navbar {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  font-size: 4rem;
-  cursor: pointer;
-  color: #444;
-  display: none;
-}
-.header .navbar #close-navbar:hover {
-  transform: rotate(90deg);
-}
+
 .header .navbar a {
   margin-right: 2rem;
   font-size: 2rem;
@@ -96,7 +91,7 @@ section {
   color: #444;
 }
 .header .navbar a:hover {
-  color: #0eb582;
+  color: #0322bc;
 }
 .header .icons div {
   cursor: pointer;
@@ -105,7 +100,7 @@ section {
   margin-left: 1.5rem;
 }
 .header .icons div:hover {
-  color: #0eb582;
+  color: #001eff;
 }
 .header #menu-btn {
   display: none;
@@ -128,20 +123,15 @@ section {
 .home .slide .content h3 {
   font-size: 5rem;
   text-transform: capitalize;
-  color: #444;
-  color: #fff;
+  color: #000000;
 }
 .home .slide .content p {
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   line-height: 2;
-  color: #777;
-  color: #eee;
+  color: #201d1d;
   padding: 1rem 0;
 }
 
-.swiper-pagination-bullet-active {
-  background: #0eb582;
-}
 /*====================================================================================*/
 
 .footer {
@@ -159,7 +149,7 @@ section {
   padding: 1rem 0;
 }
 .footer .box-container .box h3 i {
-  color: #0eb582;
+  color: #0033ff;
 }
 .footer .box-container .box .share {
   margin-top: 1rem;
@@ -169,23 +159,23 @@ section {
   width: 4.5rem;
   line-height: 4.5rem;
   font-size: 1.7rem;
-  background-color: #0eb582;
+  background-color: #0123ff;
   color: #fff;
   margin-right: 0.3rem;
   text-align: center;
 }
 .footer .box-container .box .share a:hover {
-  background-color: #444;
+  background-color: rgb(0, 68, 255);
 }
 .footer .box-container .box .link {
   font-size: 1.7rem;
   line-height: 2;
-  color: #777;
+  color: #000000;
   padding: 0.5rem 0;
   display: block;
 }
 .footer .box-container .box .link:hover {
-  color: #0eb582;
+  color: #0044ff;
   text-decoration: underline;
 }
 .footer .box-container .box p {
@@ -198,7 +188,7 @@ section {
   width: 100%;
   padding: 1.2rem 1.4rem;
   font-size: 1.6rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid #0022ff;
   margin-bottom: 1rem;
 }
 .footer .credit {
@@ -208,8 +198,8 @@ section {
   font-size: 2rem;
   text-transform: capitalize;
   color: #444;
-  border-top: 0.1rem solid #0eb582;
+  border-top: 0.1rem solid #0033ff;
 }
 .footer .credit span {
-  color: #0eb582;
+  color: #0048ff;
 }
