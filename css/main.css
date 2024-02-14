@@ -9,7 +9,13 @@
   text-decoration: none;
   transition: all 0.2s linear;
 }
-
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.contenido-principal {
+  padding-top: 2rem;
+}
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -35,6 +41,30 @@ html::-webkit-scrollbar-thumb {
   background: #0045c4;
 }
 /*====================================================================================*/
+
+.heading-link {
+  text-align: center;
+  background: url("/assets/supermarket.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.heading-link h3 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: #000000;
+}
+.heading-link p {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 2;
+  color: #000000;
+}
+.heading-link p a {
+  color: #0044ff;
+}
+.heading-link p a:hover {
+  text-decoration: underline;
+}
 
 section {
   padding: 5rem 10%;
@@ -191,18 +221,97 @@ section {
   background: #ff0202;
   color: #fff;
 }
-/*====================================================================================*/
+/*=============================GALLERY PRODUCTS========================================*/
 
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
-/*====================================================================================*/
+.gallery-products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.gallery-products .image {
+  flex: 1 1 40rem;
+}
+.gallery-products .image img {
+  width: 100%;
+}
+.gallery-products .content {
+  flex: 1 1 40rem;
+}
+.gallery-products .content .products-title {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: #000000;
+}
+.gallery-products .content p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 2;
+  color: #000000;
+  padding: 1rem 0;
+}
+.gallery-products .content .icons-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+.gallery-products .content .icons-container .icons {
+  text-align: center;
+  border: 0.4rem solid #003cff;
+  background: #e5e7ea;
+  padding: 3rem 2rem;
+}
+.gallery-products .content .icons-container .icons img {
+  height: 9rem;
+  margin-bottom: 0.5rem;
+}
+.gallery-products .content .icons-container .icons h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0)
+}
+.gallery-products .content .icons-container .icons span {
+  font-size: 1.7rem;
+  font-weight: 900;
+  line-height: 2;
+  color: #000000;
+}
+/*================================GALLERY SECTION=========================================*/
+.gallery {
+  list-style: none;
+  padding: 5rem;
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) { 
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+.gallery img {
+  height: 30rem;
+  width: 30rem;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.gallery img:hover{
+  transform: scale(1.1);
+}
+/*=========================================================================*/
+/*=========================================================================*/
+/*=========================================================================*/
+/*==========================================================================*/
+/*==========================================================================*/
+/*==========================================================================*/
+/*===========================================================================*/
+/*===========================================================================*/
+/*===========================================================================*/
 
 
 .footer {
