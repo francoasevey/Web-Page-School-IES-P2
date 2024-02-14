@@ -10,7 +10,7 @@
 <body>
 
   <header class="header">
-    <a href="#" class="logo"> <i class="fas fa-lightbulb"></i> Maxi Compras</a>
+    <a href="/index.html" class="logo"> <i class="fas fa-lightbulb"></i> Maxi Compras</a>
     <nav class="navbar">
         <a href="/index.html">Home</a>
         <a href="/html/about.html">About</a>
@@ -67,13 +67,13 @@
             </iframe>
         </div>
 
-        <form action="">
+        <form action="/php/app.php" method="post">
             <h3>send us a message</h3>
-            <input type="text" name="" id="" placeholder="name" class="box">
-            <input type="email" name="" id="" placeholder="email" class="box">
-            <input type="number" name="" id="" placeholder="phone" class="box">
-            <textarea name="" id="" cols="30" rows="10" class="box" placeholder="message"></textarea>
-            <input type="submit" value="send message" class="btn">
+            <input type="text" name="name" id="name" placeholder="name" class="box" required>
+            <input type="email" name="email" id="email" placeholder="email" class="box" required>
+            <input type="number" name="number" id="number" placeholder="phone" class="box" required>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" class="box" placeholder="message" required></textarea>
+            <button type="submit" value="send message" class="btn">Send message</button>
         </form>
     </div>
   </section>
@@ -81,7 +81,9 @@
   <section class="footer">
     <div class="box-container">
         <div class="box">
-            <h3><i class="fas fa-lightbulb"> Maxi Compras</i></h3>
+            <a href="/index.html">
+                <h3><i class="fas fa-lightbulb"> Maxi Compras</i></h3>
+            </a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias possimu</p>
             <div class="share">
                 <a href="#" class="fab fa-facebook-f" target="_blank"></a>

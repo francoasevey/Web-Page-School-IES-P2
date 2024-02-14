@@ -463,17 +463,24 @@ section {
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  border-radius: 5%;
+  color: #fff;
 }
 .service:hover{
-  background: transparent;
-  border-color: var(--color-primary);
+  transform: scale(1.1);
 }
 .service-info{
   padding: 2rem;
 }
+.services-container .service .service-image img{
+  border-radius: 5%;
+}
+.service-info h4{
+  font-size: 1.9rem;
+}
 .service-info p{
   margin: 1.2rem 0 2rem;
-  font-size: 0.9rem;
+  font-size: 1.7rem;
 }
 .services{
   margin-top: 1rem;
