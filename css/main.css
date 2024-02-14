@@ -409,12 +409,11 @@ section {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.contact .row .image {
+.contact .row .image iframe{
   flex: 1 1 40rem;
-}
-.contact .row .image img {
-  width: 100%;
   border-radius: 5%;
+  width: 50rem;
+  height: 50rem;
 }
 .contact .row form {
   flex: 1 1 40rem;
