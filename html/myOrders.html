@@ -31,6 +31,83 @@
     <p><a href="/index.html">Home</a> / Orders</p>
   </section>
 
+  <section class="gallery-products">
+    <div class="content">
+      <h1 class="heading">work with us</h1>
+      <div class="icons-container" style="text-align: center;">
+        <form action="/php/form.php" method="POST" enctype="multipart/form-data">
+          <div class="btn btn-primary btn-lg">
+            <label for="name" class="btn btn-primary btn-lg">Name or Company:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+            
+            <label for="email" class="btn btn-primary btn-lg">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            
+            <label for="number" class="btn btn-primary btn-lg">Number:</label>
+            <input type="number" class="form-control" id="number" name="number" required>
+            
+            
+              <label class="btn btn-primary btn-lg" for="country">Country:</label>
+              <input type="text" id="country" class="form-control" name="country" list="countries">
+              <datalist id="countries">
+                <option value="España">
+                <option value="Argentina">
+                <option value="México">
+                <option value="Colombia">
+                <option value="Chile">
+              </datalist>
+            
+     
+              <label class="btn btn-primary btn-lg" for="city">city:</label>
+              <select id="city" name="city" class="form-select mb-3">
+                <option value="madrid">Madrid</option>
+                <option value="bogota">Bogotá</option>
+                <option value="mexicocity">Mexico D.C.</option>
+                <option value="buenosaires">Buenos Aires</option>
+                <option value="santiago">Santiago de Chile</option>
+              </select>
+            
+            <label class="btn btn-primary btn-lg" for="option">reason for contact:</label>
+            <select id="option" class="form-select mb-3" name="option" required>
+              <option value="">choose an option</option>
+              <option value="consultancy">consultancy</option>
+              <option value="collaboration">collaboration</option>
+              <option value="other">other</option>
+            </select>
+          
+            <label for="entrepreneur">Entrepreneur</label>
+            <input type="checkbox" id="entrepreneur" name="entrepreneur">
+            
+            <label for="company">Company</label>
+            <input type="checkbox" id="company" name="company">
+            
+            <label for="cv" class="col-md-3 mb-3">upload CV or Project:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+          
+          <div class="btn btn-primary btn-lg">
+            <label for="range">set out to invest $:</label>
+            <input type="range" id="range" name="range" min="50000" max="10000000" value="50000">
+          </div> <br>
+        
+              <label class="form-label" for="date">start of project:</label>
+              <input type="date" id="date" name="date" class="form-control">                    
+                               
+          
+          <div>
+            <label class="form-label" for="message">message:</label>
+            <textarea id="message" class="form-control mb-3" rows="4" cols="30" name="message"></textarea>
+          </div>
+          
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Send</button>
+            <button type="reset" class="btn btn-danger btn-lg">Cancel</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <section class="footer">
     <div class="box-container">
         <div class="box">
